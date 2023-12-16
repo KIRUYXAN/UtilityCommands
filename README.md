@@ -1,127 +1,162 @@
-# Commands List
+# RU Commands List
 
-Below is a list of commands you can use with the [Utility Commands](https://steamcommunity.com/sharedfiles/filedetails/?id=2666310447) mod for The Binding of Isaac: Repentance.
-
-
-Parameters in `[` square brackets `]` are optional and don't have to be specified when using a command. Some of these have a default value that is represented with the `=` symbol.
+Ниже приведен список команд, которые вы можете использовать с модом [Utility Commands](https://steamcommunity.com/sharedfiles/filedetails/?id=2666310447) для The Binding of Isaac: Repentance.
 
 
-To display information about a command directly in the Debug Console, type in `<command> ?`
+Параметры в `[` квадратных скобках `]` являются необязательными и их можно не указывать при использовании команды. Некоторые из них имеют значение по умолчанию, представленное символом `=`.
 
-| Command | Usage | Description| Alias |
+
+Чтобы отобразить информацию о команде непосредственно в консоли отладки, введите `<command> ?`
+
+| Команда | Условия | Описание | Сокрашение |
 | :--- | :--- | :--- | :--- |
-| `announcer` | *\<0/1/2>* | Changes the announcer's voice mode. | ann |
-| `appear` | | Animates the player's appear animation. | hi |
-| `blackhearts` | *\<amount to give/take>* | Gives/Takes a specified amount of black hearts. | bh |
-| `bloodcharge` | *\<amount to give/take>* | Gives/Takes a specified amount of blood charges (for Tainted Bethany). | bc, bloodcharges |
-| `bombs` | *\<amount to give/take>* | Gives/Takes a specified amount of bombs. | |
-| `bonehearts` | *\<amount to give/take>* | Gives/Takes a specified amount of bone hearts. | bone, bones |
-| `borderlessfullscreen` | *\[0/1]* | Toggles borderless fullscreen (if fullscreen is enabled). | blfs |
-| `brokenhearts` | *\<amount to give/take>* | Gives/Takes a specified amount of broken hearts. | broken |
-| `bulletvisibility` | *\[0/1]* | Toggles bullet visibility. | bulletvis |
-| `burnme` | *\<duration> \[f/s]* | Makes the player burn for a set duration. | burn |
-| `camerastyle` | *\[0/1]* | Toggles active camera style. | camstyle, cam |
-| `chargebars` | *\[0/1]* | Toggles charge bars. | |
-| `chargeitem` | *\<amount> \[slot=0/1/2/3]* | Charges your active item by a specified amount. | charge, battery |
-| `charmme` | *\<duration> \[f/s]* | Makes the player charmed for a set duration. | charm |
-| `clearroom` | *\[0/1]* | Clears/Unclears the room. | roomclear, cr, rc |
-| `closedoors` | *\[clear=0/1]* | Closes all doors in the room. | close |
-| `confuseme` | *\<duration> \[f/s]* | Makes the player confused for a set duration. | confuse |
-| `consolefont` | *\<0/1/2>* | Changes the console font. | font |
-| `count` | *\<type> \[variant] \[subtype]* | Counts the number of entities in the room. | c |
-| `damage` | *\<amount>* | Temporarily changes the player's damage. | dmg |
-| `destroygrid` | | Destroys all grid entities in the room. | dg |
-| `dischargeitem` | *\[slot=0/1/2/3]* | Discharges your active item. | discharge, uncharge |
-| `displaypopups` | *\[0/1]* | Toggles display popups. | popups |
-| `eternalhearts` | *\<amount to give/take>* | Gives/Takes a specified amount of eternal hearts. | eternal, eh |
-| `explosion` | *\[position type] \[damage] \[radius=1]* | Creates an explosion on a given position. | explode, boom |
-| `extrahudstyle` | *\<0/1/2>* | Changes the Extra HUD style. | hudstyle |
-| `fadedconsoledisplay` | *\[0/1]* | Toggles faded console display. | fadedconsole, consoledisplay |
-| `fearme` | *\<duration> \[f/s]* | Makes the player feared for a set duration. | fear |
-| `filter` | *\[0/1]* | Toggles texture filter mode. | |
-| `firerate` | *\<amount>* | Temporarily changes the player's fire rate. | tears, tearrate, fr, tr |
-| `forceitem` | *\<item id or 0 to disable>* | Forces all future items to spawn as the item specified. | fi, breakfast |
-| `foundhud` | *\[0/1]* | Toggles Found HUD. | |
-| `freezeme` | *\<duration> \[f/s]* | Makes the player frozen for a set duration. | freeze |
-| `fullhealth` | | Fills all of the player's heart containers. | fullhp, heal |
-| `fullscreen` | *\[0/1]* | Toggles fullscreen mode. | |
-| `gamma` | *\<0.5-1.5>* | Changes the gamma settings. | |
-| `getposition` | | Prints the player's coordinates. | getpos |
-| `gigabombs` | *\<amount to give/take>* | Gives/Takes a specified amount of giga bombs. | giga, gbombs |
-| `giveitemwisp` | *\<item id>* | Gives a Lemegeton wisp. | itemwisp, iwisp, wisp2 |
-| `givewisp` | *\<item id>* | Gives a Book of Virtues wisp. | wisp |
-| `goldenbomb` | *\<0/1>* | Gives/Removes a golden bomb. | gb |
-| `goldenhearts` | *\<amount to give/take>* | Gives/Takes a specified amount of golden hearts. | gh |
-| `goldenkey` | *\<0/1>* | Gives/Removes a golden key. | gk |
-| `happy` | | Animates the player's happy animation. | :) |
-| `hud` | *\[0/1]* | Toggles the HUD. | |
-| `hudoffset` | *\<amount>* | Changes the HUD offset. | hudoff |
-| `imfat` | | Spawns a fatty in the center of the map. | |
-| `infinitemoney` | *\[0/1]* | Toggles infinite money. | infmoney, im |
-| `keybindings` | *\[0/1]* | Toggles key bindings on/off. | keybinds, kb, bindings, binds |
-| `keys` | *\<amount to give/take>* | Gives/Takes a specified amount of keys. | |
-| `kill` | *\[type] \[variant] \[subtype]* | Kills all or the specified entities in the room. | killall, k |
-| `killflies` | | Kills all blue flies and spiders in the room. | killspiders, kf, ks |
-| `killwisps` | | Kills all wisps. | killwisp, kw |
-| `lighttravel` | | Animates the player's light travel animation. | ltravel, travellight, lt |
-| `luck` | *\<amount>* | Temporarily changes the player's luck. | |
-| `mamamega` | *\[position type]* | Creates a Mama Mega explosion. | mama, mega |
-| `mapoppacity` | *\<0-1>* | Changes the map oppacity. | mapopp |
-| `maxhearts` | *\<amount to give/take (2 = 1 full container)>* | Gives/Removes a specified amount of heart containers. | maxhp, mh |
-| `maxrenderscale` | *\<0-99>* | Changes the maximum render scale. | |
-| `maxscale` | *\<0-99>* | Changes the render scale. | |
-| `midasme` | *\<duration> \[f/s]* | Makes the player midas frozen for a set duration. | midas |
-| `money` | *\<amount to give/take>* | Gives/Takes a specified amount of money. | coins, cash |
-| `mousecontrol` | *\[0/1]* | Toggles mouse control. | mouse |
-| `musicvolume` | *\<0-1>* | Sets the music volume. | musicvol, music |
-| `name` | | Prints the character's name. | |
-| `nocurse` | *\[0/1]* | Permanently disables curses. | nocurses, nc |
-| `opendoors` | *\[clear=0/1]* | Opens all doors in the room. | open |
-| `pauseonfocuslost` | *\[0/1]* | Toggles pause on focus lost. | pausefocus |
-| `pitfallin` | | Animates the player's pitfall in animation. | pfi |
-| `pitfallout` | | Animates the player's pitfall out animation. | pfo |
-| `planetarium` | | Prints the current Planetarium chance. | plan |
-| `player` | *\<player id/name> \[tainted=0/1]* | Changes the current character. | character, char, p |
-| `playsound` | *\<sound id> \[volume=1] \[pitch=1] \[pan=0]* | Plays a sound. | play, sound, sfx |
-| `poisonme` | *\<duration> \[f/s]* | Makes the player poisoned for a set duration. | poison |
-| `poopmana` | *\<amount to give/take>* | Gives/Takes a specified amount of poop mana (Tainted ???). | poop, poops, pm |
-| `position` | *\<position type>* | Moves the player to a given position. | pos |
-| `printentityhealth` | | Prints the health points of all non-effect entities in the room. | printhp, hp |
-| `range` | *\<amount>* | Temporarily changes the player's range. | |
-| `rechargeitem` | *\[slot=0/1/2/3]* | Fully recharges your active item. | recharge, fullcharge |
-| `removeentities` | *\[type] \[variant] \[subtype]* | Removes all entities or entities matching the criteria. | re, removeentity |
-| `removegrid` | | Removes all grid entities in the room. | rg |
-| `rottenhearts` | *\<amount to give/take>* | Gives/Takes a specified amount of rotten hearts. | rotten, rh |
-| `rumble` | *\[0/1]* | Toggles Rumble support. | |
-| `sad` | | Animates the player's sad animation. | :( |
-| `savecommandhistory` | *\[0/1]* | Toggles saving command history. | savecmdhistory |
-| `seedeffect` | *\<id> \[0/1]* | Toggles a special seed effect. | seedeff, sef, seed2 |
-| `sfxvolume` | *\<0-1>* | Changes the SFX volume. | sfxvol, sfx |
-| `shakescreen` | *\<duration> \[f/s]* | Shakes the screen for a set duration. | shake, earthquake, quake |
-| `shotspeed` | *\<amount>* | Temporarily changes the player's shot speed. | ss |
-| `showentityhealth` | *\<mode> \[type] \[variant] \[subtype]* | Displays entities' health. | showentityhp, showhp, hps |
-| `showentityinfo` | *\[0/1]* | Shows the type, variant and subtype of entities. | entityinfo, ei |
-| `showfamiliars` | *\[0/1]* | Shows familiar usage. | showfams, fams, sf |
-| `showpools` | *\[0/1]* | Prints the item pool when an item has been spawned naturally. | pool, pools, showpool |
-| `size` | *\<amount (+/-)>* | Increases/Decreases the player's size. | scale, resize |
-| `slowme` | *\<duration> \[f/s] \[intensity=0.5]* | Makes the player slowed for a set duration. | slow |
-| `soulcharge` | *\<amount to give/take>* | Gives/Takes a specified amount of soul charges (Bethany). | sc |
-| `soulhearts` | *\<amount to give/take>* | Gives/Takes a specified amount of soul hearts. | soul, sh |
-| `spawndummy` | *\[position type]* | Spawns a dummy on a given position. | dummy, dm |
-| `spawnentity` | *\<type> \[variant] \[subtype] \[champion type] \[position type]* | Spawns an entity on a given position. | se |
-| `spawngoldentrinket` | *\<trinket id> \[position type]* | Spawns a golden trinket on a given position. | sg |
-| `spawngrid` | *\<grid entity id> \[variant] \[position type]* | Spawns a grid entity on a given position. | grid, gs |
-| `spawnitem` | *\<item id> \[position type]* | Spawns an item pedestal on a given position. | si |
-| `spawntrinket` | *\<trinket id> \[position type]* | Spawns a trinket on a given position. | st |
-| `speed` | *\<amount>* | Temporarily changes the player's speed. | spd |
-| `stoploopingsounds` | | Stops all looping sounds. | stopsounds, stoploop, sls |
-| `stopsound` | *\<sound id>* | Stops a sound. | stop, stopsfx |
-| `teleport` | | Animates the player's teleport animation. | tp |
-| `trapdoor` | | Animates the player's trapdoor animation. | td |
-| `turngold` | | Makes the room golden. | gold, golden, goldroom, goldenroom |
-| `usecard` | *\<card id> \[show animation=0] \[add costume=1]* | Uses a card. | card |
-| `useitem` | *\<item id> \[show animation=0] \[add costume=1]* | Uses an active item. Can also work with some passive items, granting their effect for the current room. | use, item |
-| `usepill` | *\<pill id> \[horse=0/1]* | Uses a pill. | pill |
-| `usepoopspell` | *\<spell id>* | Uses a poop spell. | poop, poopspell |
-| `visibility` | *\[0/1]* | Makes the player visible/invisible. | vis |
-| `vsync` | *\[0/1]* | Toggles VSync. | |
+| `announcer` | *\<0/1/2>* | Изменяет голосовой режим диктора. | ann |
+| `appear` | | Проиграть анимацию появления игрока. | hi |
+| `blackhearts` | *\<кол-во, которое нужно дать/забрать>* | Дает/забирает определенное количество черных сердец. | bh |
+| `bloodcharge` | *\<кол-во, которое нужно дать/забрать>* | Дает/забирает определенное количество зарядов крови (для Порченой Бетани). | bc, bloodcharges |
+| `bombs` | *\<кол-во, которое нужно дать/забрат>* | Дает/забирает определенное количество бомб. | |
+| `bonehearts` | *\<кол-во, которое нужно дать/забрат>* | Дает/забирает определенное количество костяные сердца. | bone, bones |
+| `borderlessfullscreen` | *\[0/1]* | Включает окно без рамок (при полноэкранном режиме). | blfs |
+| `brokenhearts` | *\<кол-во, которое нужно дать/забрат>* | Дает/забирает определенное количество разбитые сердца. | broken |
+| `bulletvisibility` | *\[0/1]* | Переключает видимость пуль. | bulletvis |
+| `burnme` | *\<продолжительность> \[f(кадры)/s(секунды)]* | Заставляет игрока гореть в течение заданного времени. | burn |
+| `camerastyle` | *\[0/1]* | Переключает стиль активной камеры. | camstyle, cam |
+| `chargebars` | *\[0/1]* | Переключает полосу заряда. | |
+| `chargeitem` | *\<кол-во> \[слот=0/1/2/3]* | Заряжает ваш активный предмет на указанное количество. | charge, battery |
+| `charmme` | *\<продолжительность> \[f(кадры)/s(секунды)]* | Делает игрока очарованным на определенное время. | charm |
+| `clearroom` | *\[0/1]* | Очищает/заполняет комнату. | roomclear, cr, rc |
+| `closedoors` | *\[очищать комнату=0/1]* | Закрывает все двери в комнате. | close |
+| `confuseme` | *\<продолжительность> \[f(кадры)/s(секунды)]* | Вводит игрока в замешательство на заданное время. | confuse |
+| `consolefont` | *\<0/1/2>* | Изменяет шрифт консоли. | font |
+| `count` | *\<тип> \[вариант] \[подтип]* | Подсчитывает количество сущностей в комнате. | c |
+| `damage` | *\<кол-во>* | Временно изменяет урон игрока. | dmg |
+| `destroygrid` | | Уничтожает все объекты сетки в комнате. | dg |
+| `dischargeitem` | *\[слот=0/1/2/3]* | Разряжает ваш активный предмет. | discharge, uncharge |
+| `displaypopups` | *\[0/1]* | Переключает отображение всплывающих окн. | popups |
+| `eternalhearts` | *\<кол-во, которое нужно дать/забрат>* | Дает/забирает определенное количество вечные(белые) сердца. | eternal, eh |
+| `explosion` | *\[тип позиции] \[урон] \[радиус=1]* | Создает взрыв в заданной позиции. | explode, boom |
+| `extrahudstyle` | *\<0/1/2>* | Изменяет стиль Extra HUD. | hudstyle |
+| `fadedconsoledisplay` | *\[0/1]* | Переключает тусклый дисплей консоли. | fadedconsole, consoledisplay |
+| `fearme` | *\<продолжительность> \[f(кадры)/s(секунды)]* | Заставляет игрока бояться на заданное время. | fear |
+| `filter` | *\[0/1]* | Переключает режим текстурного фильтра. | |
+| `firerate` | *\<amount>* | Временно изменяет скорострельность игрока. | tears, tearrate, fr, tr |
+| `forceitem` | *\<id предмета или 0 чтобы выключить>* | Заставляет все будущие предметы появляться в соответствии с указанным элементом. | fi, breakfast |
+| `foundhud` | *\[0/1]* | Переключает Found HUD. | |
+| `freezeme` | *\<продолжительность> \[f(кадры)/s(секунды)]* | Замораживает игрока на заданное время. | freeze |
+| `fullhealth` | | Заполняет все контейнеры игрока сердцами. | fullhp, heal |
+| `fullscreen` | *\[0/1]* | Переключает полноэкранный режим. | |
+| `gamma` | *\<0.5-1.5>* | Изменяет настройки гаммы. | |
+| `getposition` | | Печатает координаты игрока. | getpos |
+| `gigabombs` | *\<кол-во, которое нужно дать/забрат>* | Дает/забирает определенное количество гига бомб. | giga, gbombs |
+| `giveitemwisp` | *\<id предмета>* | Дает огонек Лемегетона. | itemwisp, iwisp, wisp2 |
+| `givewisp` | *\<id предмета>* | Дает огонек Книги добродетелей. | wisp |
+| `goldenbomb` | *\<0/1>* | Дает/забират золотую бомбу. | gb |
+| `goldenhearts` | *\<кол-во, которое нужно дать/забрат>* | Дает/забирает определенное количество золотых сердец. | gh |
+| `goldenkey` | *\<0/1>* | Дает/забирает золотой ключик. | gk |
+| `happy` | | Проигрывает счастливую анимацию игрока. | :) |
+| `hud` | *\[0/1]* | Переключает HUD. | |
+| `hudoffset` | *\<кол-во>* | Изменяет смещение HUD. | hudoff |
+| `imfat` | | Создает толстяка в центре карты.. | |
+| `infinitemoney` | *\[0/1]* | Переключает бесконечные деньги. | infmoney, im |
+| `keybindings` | *\[0/1]* | Переключает работу key bindings. | keybinds, kb, bindings, binds |
+| `keys` | *\<кол-во, которое нужно дать/забрат>* | Дает/забирает определенное количество ключей. | |
+| `kill` | *\[тип] \[вариант] \[подтип]* | Убивает всё или указанные объекты в комнате. | killall, k |
+| `killflies` | | Убивает всех синих мух и пауков в комнате. | killspiders, kf, ks |
+| `killwisps` | | Убивает все огоньки(от лемигитона). | killwisp, kw |
+| `lighttravel` | | Проигрывает анимацию легкого путешествия игрока. | ltravel, travellight, lt |
+| `luck` | *\<кол-во>* | Временно меняет удачу игрока. | |
+| `mamamega` | *\[тип позиции]* | Создает взрыв Мамы Меги. | mama, mega |
+| `mapoppacity` | *\<0-1>* | Изменяет непрозрачность карты. | mapopp |
+| `maxhearts` | *\<кол-во, которое нужно дать/забрат (2 = 1 полный контейнер)>* | Дает/удаляет определенное количество контейнеров с сердечками.. | maxhp, mh |
+| `maxrenderscale` | *\<0-99>* | Изменяет максимальный масштаб рендеринга. | |
+| `maxscale` | *\<0-99>* | Изменяет масштаб рендеринга. | |
+| `midasme` | *\<продолжительность> \[f(кадры)/s(секунды)]* | Замораживает игрока в золоте на заданное время. | midas |
+| `money` | *\<кол-во, которое нужно дать/забрат>* | Дает/забирает определенное количество монет. | coins, cash |
+| `mousecontrol` | *\[0/1]* | Переключает управление мышью. | mouse |
+| `musicvolume` | *\<0-1>* | Устанавливает громкость музыки. | musicvol, music |
+| `name` | | Печатает имя персонажа. | |
+| `nocurse` | *\[0/1]* | Навсегда отключает проклятия. | nocurses, nc |
+| `opendoors` | *\[очищать комнату=0/1]* | Открывает все двери в комнате. | open |
+| `pauseonfocuslost` | *\[0/1]* | Переключает включение паузы при потере фокуса. | pausefocus |
+| `pitfallin` | | Проигрывает анимацию входа игрока в ловушку. | pfi |
+| `pitfallout` | | Проигрывает анимацию выхода игрока из ловушки. | pfo |
+| `planetarium` | | Печатает текущий шанс планетария. | plan |
+| `player` | *\<id/имя персонажа> \[испорченый=0/1]* | Изменяет текущего персонажа. | character, char, p |
+| `playsound` | *\<id звука> \[громкость=1] \[высота звука=1] \[стерео=0]* | Воспроизводит звук. | play, sound, sfx |
+| `poisonme` | *\<продолжительность> \[f(кадры)/s(секунды)]* | Перемещает игрока на заданное время. | poison |
+| `poopmana` | *\<кол-во, которое нужно дать/забрат>* | Дает/забирает определенное количество какашка маны (Испорченная ???). | poop, poops, pm |
+| `position` | *\<тип позиции>* | Перемещает игрока в заданную позицию. | pos |
+| `printentityhealth` | | Печатает очки здоровья всех неэффектных объектов в комнате. | printhp, hp |
+| `range` | *\<кол-во>* | Временно меняет дальность стрельбы игрока. | |
+| `rechargeitem` | *\[слот=0/1/2/3]* | Полностью перезаряжает ваш активный предмет. | recharge, fullcharge |
+| `removeentities` | *\[тип] \[вариант] \[подтип]* | Удаляет все сущности или сущности, соответствующих критериям. | re, removeentity |
+| `removegrid` | | Удаляет все объекты сетки в комнате. | rg |
+| `rottenhearts` | *\<кол-во, которое нужно дать/забрат>* | Дает/забирает определенное количество гнилые сердца. | rotten, rh |
+| `rumble` | *\[0/1]* | Переключает поддержку Тряски. | |
+| `sad` | | Анимирует грустную анимацию игрока. | :( |
+| `savecommandhistory` | *\[0/1]* | Переключает сохранение истории команд. | savecmdhistory |
+| `seedeffect` | *\<id> \[0/1]* | Переключает специальный эффект сида. | seedeff, sef, seed2 |
+| `sfxvolume` | *\<0-1>* | Изменяет громкость SFX. | sfxvol, sfx |
+| `shakescreen` | *\<продолжительность> \[f(кадры)/s(секунды)]* | Трясёт экран в течение заданного времени. | shake, earthquake, quake |
+| `shotspeed` | *\<кол-во>* | Временно изменяет скорость выстрела игрока. | ss |
+| `showentityhealth` | *\<режим> \[тип] \[вариант] \[подтип]* | Отображает здоровье сущностей. | showentityhp, showhp, hps |
+| `showentityinfo` | *\[0/1]* | Показывает тип, вариант и подтип объектов. | entityinfo, ei |
+| `showfamiliars` | *\[0/1]* | Показывает информацию о спутниках. | showfams, fams, sf |
+| `showpools` | *\[0/1]* | Печатает пул предметов, когда предмет был создан естественным путем. | pool, pools, showpool |
+| `size` | *\<кол-во (+/-)>* | Увеличивает/Уменьшает размер игрока. | scale, resize |
+| `slowme` | *\<продолжительность> \[f(кадры)/s(секунды)] \[интенсивность=0.5]* | Замедляет игрока на заданное время. | slow |
+| `soulcharge` | *\<кол-во, которое нужно дать/забрат>* | Дает/забирает определенное количество заряды души. (Bethany). | sc |
+| `soulhearts` | *\<кол-во, которое нужно дать/забрат>* | Дает/забирает определенное количество душа сердца. | soul, sh |
+| `spawndummy` | *\[тип позиции]* | Создает манекен в заданной позиции. | dummy, dm |
+| `spawnentity` | *\<тип> \[вариант] \[подтип] \[тип чампиона] \[тип позиции]* | Создает сущность в заданной позиции. | se |
+| `spawngoldentrinket` | *\<id брелок> \[тип позиции]* | Создаёт золотой брелок в заданной позиции. | sg |
+| `spawngrid` | *\<id объекта сетки> \[вариант] \[тип позиции]* | Создает объект сетки в заданной позиции. | grid, gs |
+| `spawnitem` | *\<id премета> \[тип позиции]* | Создает пьедестал для предметов в заданной позиции. | si |
+| `spawntrinket` | *\<id брелок> \[тип позиции]* | Создаёт брелок в заданной позиции. | st |
+| `speed` | *\<кол-во>* | Временно изменяет скорость игрока. | spd |
+| `stoploopingsounds` | | Останавливает все зацикленные звуки. | stopsounds, stoploop, sls |
+| `stopsound` | *\<id звука>* | Останавливает звук. | stop, stopsfx |
+| `teleport` | | Проиграть анимацию телепортации игрока. | tp |
+| `trapdoor` | | Проиграть анимацию люка игрока. | td |
+| `turngold` | | Делает комнату золотой. | gold, golden, goldroom, goldenroom |
+| `usecard` | *\<id карты> \[анимаця=0] \[костюм=1]* | Использует карту. | card |
+| `useitem` | *\<id предмета> \[анимаця=0] \[костюм=1]* | Использует активный элемент. Также может работать с некоторыми пассивными предметами, предоставляя их эффект для текущей комнаты. | use, item |
+| `usepill` | *\<id таблетки> \[большая=0/1]* | Использует таблетку. | pill |
+| `usepoopspell` | *\<id заклинание>* | Использует заклинание какашек. | poop, poopspell |
+| `visibility` | *\[0/1]* | Делает игрока видимым/невидимым. | vis |
+| `vsync` | *\[0/1]* | Переключает вертикальную синхронизацию. | |
+
+Некоторые команды имеют аргумент [тип позиции]. Он может быть одним из следующих:
+p - позиция игрока
+n - свободное место рядом с игроком
+c - центр комнаты
+m - положение мыши (включите полноэкранный режим или управление мышью, чтобы увидеть курсор)
+r - случайная позиция в комнате
+По умолчанию используется «p».
+
+
+Key Bindings
+Ниже вы найдете список key bindings, которые включены по умолчанию.
+Вы можете полностью отключить эту функцию, используя команду «keybinds 0».
+
+| Клавиша | Команда | Описание |
+| :--- | :--- | :--- |
+| H	| `hud`	| Переключает видимость HUD. |
+| K	| `mouse` |	Включает/выключает управление мышью. |
+| X	| #LastCmd |	Повторяет последнюю использованную команду. |
+| +	| `fullhp`	| Полностью лечит контейнеры с сердцем игрока. |
+| Backspace	| `rewind`	| Использует эффект светящихся песочных часов. |
+| F1	| `infinitemoney`	| Бесконечные деньги. |
+| F2	| `debug 3`, `play 200` |	Режим бога. |
+| F3	| `goldenbomb 1`, `play 470` |	Золотая бомба. |
+| F4	| `goldenkey 1`, `play 204` |	Золотой ключ. |
+| F8	| `debug 8`, `play 173` |	Бесконечные заряды предметов. |
+| End	| `ks` |	Убивает всех синих мух и пауков. |
+| Enter	| `killall` |	Убивает всех монстров в комнате. |
+| Delete	| `removeentities` |	Удаляет все объекты в комнате. |
+| Home	| `spawndummy` |	Создает манекен на игроке. |
+| Page Up	| `happy`	| Воспроизводит анимацию счастья. |
+| Page Down	| `sad` |	Воспроизводит грустную анимацию. |
+| *	| `fullcharge`	| Полностью заряжает активный предмет игрока. |
+
+Пользовательские сочетания клавиш можно добавить или изменить в файле uc_keybindings.lua, расположенном в папке мода.
